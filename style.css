@@ -1,0 +1,119 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Noto+Serif+KR:wght@200..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+html {
+  font-size: 12px;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background: #ffffff;
+  font-family: "Pretendard", sans-serif;
+  word-break: keep-all;
+  color: #ffffff;
+}
+
+
+a, a:link, a:visited {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Diphylleia", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.8rem;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+}
+
+
+
+.figure { 
+  position: relative;
+  overflow: hidden;
+  width: 100%; 
+  margin: 0 auto; 
+  text-align: center; 
+}
+
+.figure img { 
+  display: none;
+  max-width: 100%;
+}
+
+figcaption {
+  display: block;
+  font-family: "Pretendard", sans-serif;
+  font-size: 1em;
+  text-align: center;
+}
+.figure:hover img {
+  display: block;
+}
+
+.figure:hover figcaption {
+  display: none;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main h1 {
+  position: absolute;
+  bottom: 1.5rem;
+}
+
+.contents {
+  max-width: 980px;
+  margin: 10vh auto;
+  padding: 0 1rem;
+}
+
+.contents p {
+  font-size: 1.7rem;
+  line-height: 1.7em;
+  padding-bottom: 0;
+}
+
+.contents p span {
+  font-family: "Noto Serif KR", serif;
+  font-optical-sizing: auto;
+  font-weight: <100>;
+  font-style: normal;
+  font-size: 1em;
+}
+
+.column {
+  flex: 1;
+  overflow-y: scroll;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.column:nth-child(1) {
+  background-color: hsl(0, 0%, 100%);
+}
+.column:nth-child(2) {
+  background-color: #ffffff;
+}
+.column:nth-child(3) {
+  background-color: hsl(0, 0%, 100%);
+}
